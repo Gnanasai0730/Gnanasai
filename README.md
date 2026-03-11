@@ -373,3 +373,280 @@ printf("%d",c);
 return 0;
 }
 
+//To find grade by percentage
+#include <stdio.h>
+int main()
+{
+int percentage;
+scanf("%d",&percentage);
+if (percentage>=0&&percentage<=100){
+if (percentage>=90){
+printf("Grade=S\n");
+}else{
+if (percentage>=80){
+printf("Grade=A\n");
+}else{
+if (percentage>=70){
+printf("grade=B\n");
+}else{
+if (percentage>=60){
+printf("grade=C\n")
+}else{
+if (percentage>=50){
+printf("grade=D\n")
+}else{
+if percentage<50){
+print("grade=F");
+}
+}
+}
+}
+}
+else{printf("invalid")}
+return 0;
+}
+
+                                                         //11-03-2026//Wednesday
+//to find maximum number among 3 numbers
+#include <stdio.h>
+int main()
+{
+int n1,n2,n3;
+scanf("%d%d%d",&n1,&n2,&n3);
+if ((n1>n2)&&(n1>n3)){
+printf("max=%d",n1);
+}else if(n2>n3){
+printf("max=%d",n2);
+}else{
+print("max=%d",n3);
+}
+return 0;
+}
+
+//To check a number is b/w 1-100
+#include <stdio.h>
+{
+int n;
+scanf("%d",&n);
+if (n>=1&&n<=100){
+printf("within range");
+}else{ 
+printf("out of range");
+}
+return 0;
+}
+
+//To check whether a number is divisible by 3 or 5
+#include <stdio.h>
+{
+int n;
+scanf("%d",&n);
+if (n%3==0||n%5==0){
+printf("divisible by 3 or 5");
+}else{
+printf("not divisible");
+}
+return 0;
+}
+
+//To find Pre-Increment
+#include <stdio.h>
+void main()
+{
+int x,i;
+i=10
+x=++i;
+printf("x=%d\n",x);
+printf("i=%d",i);
+}
+
+//To find Post-Increment
+#include <stdio.h>
+void main()
+{
+int x,i;
+i=10
+x=i++;
+printf("x=%d\n",x);
+printf("i=%d",i);
+}
+
+//By using Conditional Operator
+#include <stdio.h>
+void main()
+{
+int a=10,b=20;
+int max;
+max=(a>b)?a:b;
+printf("max=%d",max);
+}
+
+//program to find days using switch program
+#include <stdio.h>
+int main()
+{
+int day;
+printf("enter no.(1-7)");
+scanf("%d",&day);
+switch(day){
+case 1:
+printf("monday");
+break;
+case 2:
+printf("tuesday");
+break;
+case 3:
+printf("wednesday");
+break;
+case 4:
+printf("thursday");
+break;
+case 5:
+printf("friday");
+break;
+case 6:
+printf("saturday");
+break;
+case 7:
+printf("sunday");
+break;
+default:
+printf("invalid input");
+}
+return 0;
+}
+
+//program for break statement
+#include <stdio.h>
+int main()
+{
+int i;
+for (i=1;i<=10,i++){
+if (i==5)
+break;
+printf("%d\n",i);
+}
+return 0;
+}
+
+//program for continue statement
+#include <stdio.h>
+int main()
+{
+int i;
+for (i=1;i<=10;i++){
+if (i==5)
+continue;
+printf("%d\n",i);
+}
+return 0;
+}
+
+//program for goto statement
+#include <stdio.h>
+int main()
+{
+int i=1;
+start:
+if (i<=5){
+printf("%d\n",i);
+i++;
+goto start;
+}
+return 0;
+}
+
+//to print HI using while loop
+#include <stdio.h>
+void main()
+{
+int i=1;
+while (i<=10)
+{
+printf("HI\n");
+i++;
+}
+printf("end");
+}
+
+//To print HI uding for loop
+#include <stdio.h>
+void main()
+{
+for (int i=1;i<=10;i++)
+{
+printf("hi\n");
+}
+
+//To display 1-10 using while loop
+#include <stdio.h>
+void main()
+{
+int i=1;
+while (i<=10)
+{
+printf("%d\n",i);
+i++;
+}
+printf("end");
+}
+
+//to diaplay 1-10 in reverse order using while loop
+#include <stdio.h>
+void main()
+{
+int i=10;
+while (i>=1)
+{
+printf(0"%d\n",i);
+i--;
+}
+printf("end");
+}
+
+//to display odd numbers
+#include <stdio.h>
+void main()
+{
+int i=1;
+while(i<=10)
+{
+if(i%2!=0)
+{
+printf("%d\n",i);
+}
+i++;
+}
+printf("end");
+}
+
+//to diaplay even numbers
+#include <stdio.h>
+void main()
+{
+int i=1;
+while(i<=10)
+{
+if (i%2==0)
+{
+printf("%d\n",i);
+}
+i++;
+}
+printf("end");
+}
+
+//To find sum of first 10 natural numbers
+#include <stdio.h>
+void main()
+{
+int i=1,sum;
+while(i<=10)
+{
+sum=sum+i;
+i++;
+}
+printf("sum=%d\n",sum);
+printf("end");
+}
+
