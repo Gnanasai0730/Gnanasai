@@ -650,3 +650,71 @@ printf("sum=%d\n",sum);
 printf("end");
 }
 
+//Sum of first 10 odd numbers
+#include <stdio.h>
+void main()
+{
+int i=1,sum=0;
+while(i<=10)
+{
+if (i%2!=0)
+{
+sum=sum+i;
+}
+i++;
+}
+printf("sum=%d\n",sum);
+printf("end");
+}
+
+//Sum of first 10 even numbers
+#include <stdio.h>
+void main()
+{
+int i=1,sum=0;
+while(i<=10)
+{
+if (i%2==0)
+{
+sum=sum+i;
+}
+i++;
+}
+printf("sum=%d\n",sum);
+printf("end");
+}
+
+//to find the factorial of a given number
+#include <stdio.h>
+void main()
+{
+int i=1,fact=1;
+while (i<=5)
+{
+fact=fact*i;
+i++;
+}
+printf("factorial=%d\n",fact);
+printf("end");
+}
+
+//To print the fibonacci series
+#include <stdio.h>
+void main()
+{
+int i=0,first=0,second=1,next;
+while (i<=10)
+{
+printf("%d\n",first);
+next=first+second;
+first=second;
+second=next;
+i++;
+}
+}
+
+//
+
+
+
+
