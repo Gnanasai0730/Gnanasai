@@ -980,7 +980,251 @@ printf("%d is not perfect",t);
 }
 }
 
+                                                            //13-03-2026//Friday
+//To find the given number is prime or not
+#include<stdio.h>
+void main()
+{
+    int num,i,isPrime=1;
+    printf("Enter the number: ");
+    scanf("%d",&num);
+    if (num<=1){
+        isPrime=0;
+    }
+    else{
+        for(i=2;i<=num/2;i++){
+            if(num%i==0){
+                isPrime=0;
+                break;
+            }
+        }
+    }
+    if(isPrime){
+        printf("%d is a prime number");
+    }
+    else{
+        printf("%d is not a prime number");
+    }
+}
 
+//To find the prime numbers in a given set of numbers
+#include<stdio.h>
+int main()
+{
+    int num,i,j,isPrime;
+    printf("Enter the number: ");
+    scanf("%d",&num);
+    for(i=2;i<=num;i++){
+        isPrime=1;
+        for(j=2;j<=i/2;j++){
+            if(i%j==0){
+                isPrime=0;
+                break;
+            }
+        }
+        if(isPrime){
+            printf("%d is a Prime number.\n",i);
+        }
+    }
+    return 0;
+}
+
+//Program to find the given pattern
+#include<stdio.h>
+int main()
+{
+    int n,i,j;
+    scanf("%d",&n);
+    for (i=1;i<=5;i++)
+    {
+        for (j=1;j<=5;j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+//To print the hallow pattern
+#include<stdio.h>
+int main()
+{
+    int n,i,j;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+        for(j=1;j<=n;j++){
+            if(i==1||i==n||j==1||j==n){
+                printf("*");
+            }
+            else{
+                printf(" ");
+             }
+        }
+        printf("\n");
+         }
+         return 0;
+         }
+
+//To print the staircas of stars
+#include<stdio.h>
+int main()
+{
+    int n,i,j;
+    scanf("%d",&n);
+    for (i=1;i<=n;i++){
+        for (j=1;j<=i;j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+//To print the given pattern
+#include<stdio.h>
+int main()
+{
+    int n,i,j;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+        for(j=1;j<=i;j++){
+            printf("%d",i);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+//To print the given pattern
+#include<stdio.h>
+int main()
+{
+int n,i,j;
+scanf("%d",&n);
+for (i=5;i.=1;i--){
+for (j=1;j<=i;j++){
+printf("*");
+}
+printf("\n");
+}
+return 0;
+}
+
+//To print the given pattern
+#include<stdio.h>
+int main()
+{
+int n,i,j;
+scanf("%d",&n);
+for(i=5;i>=1;i--){
+for(j=1;j<=i;j++){
+printf("%d",j);
+}
+printf("\n");
+}return 0;
+}
+
+//To print the given pattern
+#include<stdio.h>
+int main()
+{
+    int n,i,j;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+        for(j=1;j<=i;j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    for (i=n-1;i>=1;i--){
+        for(j=1;j<=i;j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+    
+
+}
+
+//To print the given pattern
+#include<stdio.h>
+int main()
+{
+    int i,j,s;
+    
+  for(i=1;i<=5;i++){
+        for(s=1;s<=5-i;s++){
+            printf(" ");
+        }
+        for(j=1;j<=i;j++){
+            printf("* ");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+//To print the given program
+#include<stdio.h>
+void main()
+{
+    int i,j,n,num;
+    num=1;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+        for(j=1;j<=i;j++){
+            printf("%d",num);
+            num++;
+        }
+        printf("\n");
+    }
+}
+
+//To print the given pattern
+#include<stdio.h>
+int main()
+{
+int n,i,j;
+scanf("%d",&n);
+for (i=1;i<=n;i++){
+for (j=1;j<=n-j;j++){
+printf(" ");
+}
+for(j=1;j<=(2*i-1);j++){
+if(i==1||i==n||j==1||j==(2*i-1)){
+printf("*");
+}
+else{
+printf(" ");
+}
+printf(" ");
+}
+printf("\n");
+}
+return 0;
+}
+
+//To print the palindrome number
+#include <stdio.h>
+int main()
+{
+int n, rev = 0, r, temp;
+printf("Enter a number: ");
+scanf("%d", &n);
+temp = n;
+while(n > 0)
+{
+r = n % 10;
+rev = rev * 10 + r;
+n = n / 10;
+}
+if(temp == rev)
+printf("Palindrome number");
+else
+printf("Not a palindrome");
+return 0;
+}
 
 
 
