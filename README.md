@@ -1065,7 +1065,7 @@ int main()
          return 0;
          }
 
-//To print the staircas of stars
+//To print the staircase of stars
 #include<stdio.h>
 int main()
 {
@@ -1165,7 +1165,7 @@ int main()
     return 0;
 }
 
-//To print the given program
+//To print the given pattern
 #include<stdio.h>
 void main()
 {
@@ -1226,5 +1226,338 @@ printf("Not a palindrome");
 return 0;
 }
 
+                                                         //14-03-2026//Saturday
+//TO print multiplication table
+#include <stdio.h>
+void main()
+{
+int i,n,m;
+scanf("%d",&n);
+for (i=0;i<=n;i++)
+{
+m=n*i;
+}
+printf("%dX%d=%d\n",i,n,m);
+}
+}
+
+//To print factors of given number
+#include <stdio.h>
+int main()
+{
+int i,n;
+scanf("%d",&n);
+for (i=1;i<=n;i++)
+{
+if(n%i==0)
+{
+printf("factors=%d\n",i);
+}
+}
+return 0;
+}
+
+//to find LCM of two numbers
+#include <stdio.h>
+int main()
+{
+int a,b,max;
+scanf("%d%d",&a,&b);
+max=(a>b)?a:b;
+while (1)
+{
+if(max%a==0&&max%b==0)
+{
+printf("LCM=%d",max);
+}
+max++;
+}
+return 0;
+}
+
+//To find GCD of given numbers
+#include <stdio.h>
+int main()
+{
+int a,b,i,gcd;
+scanf("%d%d",&a,&b);
+for (i=1;i<=a&&i<=b;i++)
+{
+if(a%i==0&&b%i==0)
+{
+gcd=i;
+}
+printf("%d",gcd);
+}
+return 0;
+}
+
+//To print the below pattern
+#include <stdio.h>
+int main()
+{
+int,i,n,j;
+scanf("%d",&n);
+for (i=n;i>=1;i--)
+{
+for (j=1;j<=i;j++)
+{
+printf("%d",i);
+}
+printf("\n");
+}
+return 0;
+}
+
+//To print the below pattern
+#include <stdio.h>
+int main()
+{
+int i,j,n;
+scanf("%d",&n);
+for (i=n;i>=1;i--)
+{
+for (j=1;j<=i;j++)
+{
+printf("%d",j);
+}
+printf("\n");
+}
+return 0;
+}
+
+//To print a number is perfect square or not
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+int n;
+scanf("%d",&n);
+int r=sqrt(n);
+if(r*r==n)
+printf("perfect sq");
+else
+printf("not");
+return 0;
+}
+
+//To read and display numbers using array
+#include <stdio.h>
+void main()
+{
+int i,a[5],n;
+scanf("%d",&n);
+for (i=0;i<n;i++)
+{
+scanf("%d",&a[i]);
+}
+printf("displaying integers:");
+for (int i=0;i<n;++i)
+{
+printf("%d\n",a[i]);
+}
+}
+
+//To display array values in reverse order
+#include <stdio.h>
+void main()
+{
+int i,a[5],n;
+scanf("%d",&n);
+for (i=0;i<n;i++)
+{
+scanf("%d",&a[i]);
+}
+printf("displaying integers:");
+for (int i=n-1;i>=0;i--)
+{
+printf("%d\n",a[i]);
+}
+}
+
+//To find sum of array elements
+#include <stdio.h>
+void main()
+{
+int i,n,a[100],sum=0;
+scanf("%d",&n);
+for (i=0;i<n;i++)
+{
+scanf("%d",&a[i]);
+printf("display integers");
+}
+for (int i=0;i<n;i++)
+{
+sum=sum+a[i];
+}
+printf("%d",sum);
+}
+
+//To find average of given array elements
+#include <stdio.h>
+void main()
+{
+int i,n,a[100],sum=0,avg;
+scanf("%d",&n);
+for (i=0;i<n;i++)
+{
+scanf("%d",&a[i]);
+printf("display integers:");
+for (int i=0;i<n;i++)
+{
+sum=sum+a[i];
+}
+avg=sum/n;
+printf("AVG=%d",avg);
+}
+}
+
+//To find largest element in an array
+#include <stdio.h>
+int main()
+{
+int arr[100], n, i, largest;
+printf("Enter the number of elements: ");
+scanf("%d", &n);
+printf("Enter %d elements:\n", n);
+for(i = 0; i < n; i++)
+{
+scanf("%d", &arr[i]);
+}
+largest = arr[0];   // assume first element is largest
+for(i = 1; i < n; i++)
+{
+if(arr[i] > largest) 
+{
+largest = arr[i]; 
+}
+}
+printf("The largest element in the array is: %d", largest);
+return 0;
+}
+
+//To 
+
+//To search a given element in an array
+#include <stdio.h>
+int main()
+{
+int arr[100], n, i, key, found = 0;
+printf("Enter number of elements: ");
+scanf("%d", &n);
+printf("Enter the elements:\n");
+for(i = 0; i < n; i++)
+{
+scanf("%d", &arr[i]);
+}
+printf("Enter the element to search: ");
+scanf("%d", &key);
+for(i = 0; i < n; i++)
+{
+if(arr[i] == key)
+{
+printf("Element found at position %d", i + 1);
+found = 1;
+break;
+}
+}
+if(found == 0)
+{
+printf("Element not found");
+}
+return 0;
+}
+
+#include <stdio.h>
+int main()
+{
+int n,i,count=0;
+scanf("%d",&n);
+for (i=1;i<=n;i++)
+{
+if(n%i==0)
+{
+count++;
+}
+}
+if(count>2)
+{
+printf("%d is a composite number");
+}else{
+printf("%d is not a composite number");
+}
+return 0;
+}
+
+                                                  //16-03-2026//Monday
+//To read a string
+#include <stdio.h>
+int mmain()
+{
+char name[20];
+scanf("%s",name);
+printf("your name is %s",name);
+return 0;
+}
+
+//To find length of the string
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+char str[50]="gnana sai";
+int len=strlen(str);
+printf("lenght of the string:%d",len);
+return 0;
+}
+
+//To convert to lowercase,uppercase,string reverse
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+char str[50]="GNANA SAI";
+char str1[50]="gnana sai";
+char str2[50]="GNANA SAI';
+strlwr(str);
+strupr(str1);
+strrev(str2);
+printf("lowercase:%s\n",str);
+printf("uppercase:%s\n",str1);
+printf("reverse:%s",str2);
+return 0;
+}
+
+//To compare two strings
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+char s1[20]="gnana sai";
+char s2[20]="rahul sai";
+if (strcmp(s1,s2)==0)
+{
+printf("s1&s2 are equal");
+}else{
+printf("s1&s2 are different");
+}
+return 0;
+}
+
+//To append and copy two strings
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+char s1[50]="gnana sai";
+char s2[50]="dasararaju";
+strcat(s1,s2);
+printf("output string is:%s\n",s1);
+strcpy(s1,s2);
+printf("output string is:%s",s1);
+return 0;
+}
+
+//
 
 
