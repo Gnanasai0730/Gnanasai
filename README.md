@@ -1436,8 +1436,6 @@ printf("The largest element in the array is: %d", largest);
 return 0;
 }
 
-//To 
-
 //To search a given element in an array
 #include <stdio.h>
 int main()
@@ -1468,6 +1466,7 @@ printf("Element not found");
 return 0;
 }
 
+//To print a number is composite or not
 #include <stdio.h>
 int main()
 {
