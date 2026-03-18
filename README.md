@@ -1711,3 +1711,192 @@ return 0;
 }
 
 
+
+#include <stdio.h>
+int main()
+{
+  int n,i;
+  int a[100];
+  int max;
+  scanf("%d",&n);
+  for (i=0;i<n;i++)
+  {
+    scanf("%d",&a[i]);
+  }
+  max=a[0];
+  for (i=1;i<n;i++)
+  {
+    if (a[i]>max)
+    max=a[i];
+  }
+  printf("%d",max);
+  return 0;
+}
+
+
+#include <stdio.h>
+int main()
+{
+  int i,n,a[100],min,max;
+  scanf("%d",&n);
+  for (i=0;i<n;i++)
+  {
+    scanf("%d",&a[i]);
+  }
+  min=max=a[0];
+  for (i=1;i<n;i++)
+  {
+    if(a[i]<min)
+    min=a[i];
+    if(a[i]>max)
+    max=a[i];
+  }
+  printf("%d\n",min);
+  printf("%d",max);
+  return 0;
+}
+
+#include <stdio.h>
+int main()
+{
+  int n,i,a[100];
+  scanf("%d",&n);
+  for (i=0;i<n;i++)
+  {
+    scanf("%d",&a[i]);
+  }
+  for (i=0;i<n/2;i++)
+  {
+    int temp=a[i];
+    a[i]=a[n-i-1];
+    a[n-i-1]=temp;
+  }
+  for(i=0;i<n;i++)
+  {
+    printf("%d\n",a[i]);
+  }
+  return 0;
+}
+
+#include <stdio.h>
+int main()
+{
+  int n,i,j,a[100];
+  scanf("%d",&n);
+  for (i=0;i<n;i++)
+  {
+    scanf("%d",&a[i]);
+  }
+  for (i=0;i<n;i++)
+  {
+    for (j=i+1;j<n;j++)
+    {
+      if (a[i]==a[j])
+      {
+        printf("%d\n",a[i]);
+        break;
+      }
+    }
+  }
+  return 0;
+}
+
+
+#include <stdio.h>
+int main()
+{
+  int a[10][10],b[10][10],sum[10][10];
+  int r,c,i,j;
+  scanf("%d",&r);
+  scanf("%d",&c);
+  for (i=0;i<r;i++)
+  {
+    for (j=0;j<c;j++)
+    {
+      scanf("%d",&a[i][j]);
+    }
+  }
+  for (i=0;i<r;i++)
+  {
+    for (j=0;j<c;j++)
+    {
+      scanf("%d",&b[i][j]);
+    }
+  }
+  for (i=0;i<r;i++)
+  {
+    for (j=0;j<c;j++)
+    {
+      sum[i][j]=a[i][j]+b[i][j];
+    }
+  }
+  for (i=0;i<r;i++)
+  {
+    for (j=0;j<c;j++)
+    {
+      printf("%d ",sum[i][j]);
+    }
+    printf("\n");
+  }
+  return 0;
+}
+
+
+#include <stdio.h>
+#include <string.h>
+  int main()
+  {
+    char str[20]="GNANA SAI";
+    char str1[20]="gnana sai";
+    char str2[20]="GNANASAI";
+    strlwr(str);
+    strupr(str1);
+    strrev(str2);
+    printf("%s\n",str);
+    printf("%s\n",str1);
+    printf("%s",str2);
+    return 0;
+  }
+
+#include <stdio.h>
+struct employee
+{
+  char name[50];
+  int empid;
+  float salary;
+};
+int main()
+{
+  struct employee emp;
+  scanf("%s",&emp.name);
+  scanf("%d",&emp.empid);
+  scanf("%f",&emp.salary);
+  printf("%s\n",emp.name);
+  printf("%d\n",emp.empid);
+  printf("%.2f",emp.salary);
+  return 0;
+}
+
+
+#include <stdio.h>
+struct student
+{
+    char name[20];
+    int rollno;
+    float m1,m2,m3;
+};
+int main()
+{
+    struct student s;
+    int avg=0;
+    scanf("%s",s.name);
+    scanf("%d",&s.rollno);
+    scanf("%f%f%f",&s.m1,&s.m2,&s.m3);
+    sum=(s.m1+s.m2+s.m3)/3.0;
+    printf("%s\n",s.name);
+    printf("%d\n",s.rollno);
+    printf("%.2f",avg);
+    return 0;
+}
+
+
