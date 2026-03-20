@@ -2016,3 +2016,62 @@ printf("Odd number");
 return 0;
 }
 
+// to calculate sum of first n natural numbers
+#include <stdio.h>
+int sum_n(int n) {
+    int sum = 0;
+    for(int i = 1; i <= n; i++) {
+        sum += i;
+    }
+    return sum;
+}
+int main() {
+int n, result;
+ printf("Enter a number: ");
+scanf("%d", &n);
+result = sum_n(n);
+printf("Sum of first %d natural numbers = %d", n, result);
+return 0;
+}
+
+
+// To  calculate factorial using function
+#include <stdio.h>
+int factorial(int n) {
+    int fact = 1;
+    for(int i = 1; i <= n; i++) {
+        fact *= i;
+    }
+    return fact;
+}
+
+int main() {
+int n, result;
+printf("Enter a number: ");
+ scanf("%d", &n);
+ result = factorial(n);
+ printf("Factorial of %d = %d", n, result);
+ return 0;
+}
+
+#include <stdio.h>
+
+// To  find sum of digits using function
+#include <stdio.h>
+int sum_of_digits(int n) {
+    int sum = 0;
+    while(n > 0) {
+        sum += n % 10;
+        n = n / 10;
+    }
+    return sum;
+}
+
+int main() {
+    int num;
+printf("Enter a number: ");
+scanf("%d", &num);
+printf("Sum of digits = %d", sum_of_digits(num));
+return 0;
+}
+
