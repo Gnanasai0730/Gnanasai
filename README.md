@@ -1710,7 +1710,7 @@ printf("no. of consonants:%d",consonants);
 return 0;
 }
 
-                                                   //18/03/2026//wednesday//
+                                                   //18-03-2026//wednesday//
 #include <stdio.h>
 int main()
 {
@@ -1985,7 +1985,8 @@ result =(p*t*r)/100.0;
 result result;
 }
 
-//#include <stdio.h>
+//To find area of triangle
+#include <stdio.h>
 float mul(int a,intb);
 int main()
 {
@@ -2044,7 +2045,6 @@ int factorial(int n) {
     }
     return fact;
 }
-
 int main() {
 int n, result;
 printf("Enter a number: ");
@@ -2054,7 +2054,6 @@ printf("Enter a number: ");
  return 0;
 }
 
-#include <stdio.h>
 
 // To  find sum of digits using function
 #include <stdio.h>
@@ -2066,7 +2065,6 @@ int sum_of_digits(int n) {
     }
     return sum;
 }
-
 int main() {
     int num;
 printf("Enter a number: ");
@@ -2075,3 +2073,51 @@ printf("Sum of digits = %d", sum_of_digits(num));
 return 0;
 }
 
+                                                  //20-03-2026//Friday
+//To find a number is palindrome
+#include <stdio.h>
+void pal(a);
+int main()
+{
+int a;
+scanf("%d",&a);
+pal(a);
+return 0;
+}
+void pal(int b);
+{
+int sum,rev=0;
+b=sum;
+while (sum!=0)
+{
+int digit=sum%10;
+rev=rev*10+digit;
+sum=sum/10;
+}
+if (b=rev)
+{
+printf("pal");
+}else{
+printf("not");
+}
+}
+
+//To find perimeter of rectangle
+#include <stdio.h>
+int perimtr(int l,int b);
+int main()
+{
+int l,b,y;
+scanf("%d%d",&l,&b);
+y=perimtr(l,b);
+printf("%d",y);
+return 0;
+}
+int perimtr(int l,int b)
+{
+int y;
+y=2*(l+b);
+return y;
+}
+
+//
