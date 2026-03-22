@@ -2120,4 +2120,86 @@ y=2*(l+b);
 return y;
 }
 
-//
+//To print multiplication table
+#include <stdio.h>
+void mul(int n);
+int main()
+{
+int m;
+scanf("%d",&m);
+mul(n);
+return 0;
+}
+void mul(int n)
+{
+int m,i;
+for (i=1;i<=10;i++)
+{
+m=n*i;
+printf("%dX%d=%d",n,i,m);
+}
+}
+
+//To display array elements using function
+#include <stdio.h>
+void displayArray(int a[],int size);
+int main()
+{
+int a[10]={1,3,45,2,8};
+int size=5;
+displayArray(a,size);
+return 0;
+}
+void displayArray(int a[],int size)
+{
+int i;
+for (i=0;i<size;i++)
+{
+printf("%d\n",a[i]);
+}
+}
+
+//To display array elements in reverse order
+#include <stdio.h>
+void displayarray(int a[],int size);
+int main()
+{
+int a[10]={1,3,5,4,2};
+int size=5;
+displayarray(a,size);
+return 0;
+}
+void displayarray(int a[],int size)
+{
+int i;
+for(i=size-1;i>=0;i--)
+{
+printf("%d\n",a[i]);
+}
+}
+
+//To print sum of array using function
+#include <stdio.h>
+void displaysum(int a[],int size,int sum);
+int main()
+{
+int a[10]={1,3,2,4,5};
+int size=5;
+int sum=0;
+displaysum(a,size,sum);
+return 0;
+}
+void displaysum(int a[],int size,int sum)
+{
+int i;
+int sum=0;
+for (i=0;i<5;i++)
+{
+sum=sum+a[i];
+}
+printf("%d",sum);
+}
+
+
+
+
