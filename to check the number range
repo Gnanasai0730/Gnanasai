@@ -1,0 +1,12 @@
+int main ()
+{
+    int a=7;
+    scanf("%d",&a);
+    if ((a>=0)&&(a<=100)){
+        printf("within range");
+    }
+    else {
+    printf("not in range");
+}
+return 0;
+}
