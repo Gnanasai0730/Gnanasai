@@ -1,0 +1,18 @@
+
+#include <stdio.h>
+int main() {
+    int a[100], n, sum, i, j, curr;
+
+    scanf("%d",&n);
+    for(i=0;i<n;i++) scanf("%d",&a[i]);
+    scanf("%d",&sum);
+
+    for(i=0;i<n;i++) {
+        curr = 0;
+        for(j=i;j<n;j++) {
+            curr += a[j];
+            if(curr == sum)
+                printf("Found from %d to %d\n", i, j);
+        }
+    }
+}

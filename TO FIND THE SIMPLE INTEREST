@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main ()
+{
+    int p=10,t=10,r=5;
+    float simple_interest;
+    scanf("%d%d%d",p,t,r);
+    simple_interest=p*t*r/100.0;
+    printf("the simple interest is %d",simple_interest);
+    return 0;
+}

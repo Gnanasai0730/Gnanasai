@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main ()
+{
+    float f,c;
+    scanf("%d",&f);
+    c=f*0.5-32*0.5;
+    printf("the celsius is %f",c);
+    return 0;
+}

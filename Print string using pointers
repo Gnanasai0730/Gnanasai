@@ -1,0 +1,14 @@
+
+#include <stdio.h>
+
+int main() {
+    char str[] = "C Programming";
+    char *p = str;
+
+    while(*p) {
+        printf("%c", *p);
+        p++;
+    }
+
+    return 0;
+}
