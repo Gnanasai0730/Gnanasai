@@ -1,0 +1,17 @@
+
+
+#include <stdio.h>
+
+int max(int arr[], int n) {
+    if(n == 1)
+        return arr[0];
+
+    int m = max(arr, n-1);
+    return (arr[n-1] > m) ? arr[n-1] : m;
+}
+
+int main() {
+    int arr[] = {3, 7, 2, 9, 5};
+    printf("Max = %d", max(arr, 5));
+    return 0;
+}

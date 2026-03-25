@@ -1,0 +1,18 @@
+
+
+#include <stdio.h>
+int main() {
+    int a[100], n, i;
+    int max_sum = 0, curr = 0;
+
+    scanf("%d",&n);
+    for(i=0;i<n;i++) scanf("%d",&a[i]);
+
+    for(i=0;i<n;i++) {
+        curr += a[i];
+        if(curr < 0) curr = 0;
+        if(curr > max_sum) max_sum = curr;
+    }
+
+    printf("Max Sum=%d", max_sum);
+}
