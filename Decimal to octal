@@ -4,3 +4,4 @@ void main()
 int a=20;
 printf("Octal number=%o",a);
 }
+ 
