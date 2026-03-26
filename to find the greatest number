@@ -5,7 +5,7 @@ int main ()
     if ((a>b)&&(a>c)){
         printf("a is the greatest");
     }
-    else if (b>c)
+    else if (b>c)  
     printf("b is the greatest");
 }
 else {
