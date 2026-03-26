@@ -9,7 +9,7 @@ int main()
     scanf("%s", str2);
 
     if(strcmp(str1, str2) == 0)
-    {
+    { 
         printf("Strings are equal");
     }
     else
