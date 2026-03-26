@@ -7,3 +7,4 @@ int main ()
     printf("the celsius is %f",c);
     return 0;
 }
+ 
