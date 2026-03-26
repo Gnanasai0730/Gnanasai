@@ -11,7 +11,7 @@ int reverse(int n)
     }
     return rev;
 }
-
+ 
 int main()
 {
     int n;
