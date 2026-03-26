@@ -9,7 +9,7 @@ int length(char str[]) {
 }
 
 int main() {
-    char str[] = "Hello";
+    char str[] = "Hello"; 
     printf("Length = %d", length(str));
     return 0;
 }
