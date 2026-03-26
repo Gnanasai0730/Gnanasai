@@ -6,3 +6,4 @@ int main ()
     printf("the sum of two integers is %d",sum);
     return 0;
 }
+   
