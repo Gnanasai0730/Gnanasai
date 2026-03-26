@@ -6,5 +6,5 @@ x=i++;
 y=++i;
 printf("post increment=%d",x);
 printf("pre increment=%d",y);
-return 0;
+return 0; 
 }
