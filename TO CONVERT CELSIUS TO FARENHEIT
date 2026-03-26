@@ -6,3 +6,4 @@ int main ()
     printf("the farenheit is %f",f);
     return 0;
 }
+ 
