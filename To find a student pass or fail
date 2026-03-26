@@ -7,7 +7,7 @@ scanf("%d",&n);
 if (n>=35)
 {
 printf("%dis pass",n);
-}
+} 
 else
 {
 printf("%d is fail",n);
