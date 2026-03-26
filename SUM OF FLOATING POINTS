@@ -6,3 +6,4 @@ int main ()
     printf("the sum of floating points is %f",sum);
     return 0;
 }
+ 
