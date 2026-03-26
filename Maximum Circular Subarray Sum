@@ -12,6 +12,6 @@ int main()
         if(sum<0)
             sum=0;
     }
-
+ 
     printf("Maximum sum = %d",max);
 }
