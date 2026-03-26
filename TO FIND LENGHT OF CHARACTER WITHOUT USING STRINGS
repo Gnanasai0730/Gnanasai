@@ -7,7 +7,7 @@ int main()
 
     printf("Enter a string: ");
     scanf("%s", str);
-
+ 
     while(str[i] != '\0')
     {
         leng++;
