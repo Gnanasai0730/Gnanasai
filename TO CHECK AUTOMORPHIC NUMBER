@@ -9,7 +9,7 @@ int main()
         if(temp%10!=square%10){
             printf("not automorphic");
             return 0;
-        }
+        } 
         temp=temp/10;
         square=square/10;
     }
