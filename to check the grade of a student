@@ -9,7 +9,7 @@ int main ()
     else if (marks>=90){
     printf("grade is a");
   }
-else if (marks>=80){
+else if (marks>=80){ 
     printf("grade is b");
   }
 else if (marks>=70){
