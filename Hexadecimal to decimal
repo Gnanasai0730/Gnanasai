@@ -4,3 +4,4 @@ void main()
 int a=0x15;
 printf("Decimal=%d",a);
 }
+ 
