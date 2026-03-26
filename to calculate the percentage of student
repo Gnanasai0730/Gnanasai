@@ -4,7 +4,7 @@ int main()
 
     printf("Enter the student's percentage: ");
     scanf("%d", &percentage);
-
+ 
     if (percentage >= 0 && percentage <= 100)
     {
         if (percentage >= 90)
