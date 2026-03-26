@@ -8,6 +8,6 @@ void main()
         int digit = num%10;
         sum=sum+digit;
         num=num/10;
-    }
+    }   
     printf("the sum of the digits is %d",sum);
 }
