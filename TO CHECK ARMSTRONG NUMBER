@@ -7,7 +7,7 @@ int main()
     temp = num;
     while (temp > 0)
     {
-        digit = temp % 10;
+        digit = temp % 10; 
         fact = 1;
        for (i = 1; i <= digit; i++)
         {
