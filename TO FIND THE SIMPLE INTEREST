@@ -7,4 +7,4 @@ int main ()
     simple_interest=p*t*r/100.0;
     printf("the simple interest is %d",simple_interest);
     return 0;
-}
+} 
