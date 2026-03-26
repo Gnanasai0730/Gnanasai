@@ -7,3 +7,4 @@ int main ()
     printf("the maximum value is:%d",max);
     return 0;
 }
+ 
