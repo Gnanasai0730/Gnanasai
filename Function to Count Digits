@@ -8,7 +8,7 @@ int digits(int n)
         n=n/10;
         c++;
     }
-    return c;
+    return c; 
 }
 
 int main()
