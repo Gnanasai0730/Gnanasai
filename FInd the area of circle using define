@@ -7,3 +7,4 @@ float area;
 area=pi*r*r;
 printf(".2f",area);
 }
+ 
