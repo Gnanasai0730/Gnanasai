@@ -8,7 +8,7 @@ int main()
     {
         prod=1;
         for(j=0;j<n;j++)
-        {
+        { 
             if(i!=j)
                 prod*=arr[j];
         }
