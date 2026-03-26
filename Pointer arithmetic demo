@@ -6,7 +6,7 @@ int main() {
     int *p = arr;
 
     printf("%d\n", *p);
-    printf("%d\n", *(p+1));
+    printf("%d\n", *(p+1));  
     printf("%d\n", *(p+2));
 
     return 0;
