@@ -3,7 +3,7 @@ int main ()
     char ch;
     scanf("%c",&ch);
     if (ch>='a' && ch<='z'){
-        printf("within range");
+        printf("within range"); 
     }
     else {
     printf("not in range");
