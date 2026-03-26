@@ -9,4 +9,4 @@ int main() {
 
     if(strstr(str, old))
         printf("Replacement logic needed (advanced)");
-}
+} 
