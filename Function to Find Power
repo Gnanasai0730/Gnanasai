@@ -7,7 +7,7 @@ int power(int b,int e)
         p=p*b;
     return p;
 }
-
+c
 int main()
 {
     int b,e;
