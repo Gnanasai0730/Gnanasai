@@ -7,7 +7,7 @@ void main()
     while (num!=0){
         int digit = num%10;
         cube=digit*digit*digit;
-        sum=sum+cube;
+        sum=sum+cube; 
         num=num/10;
     }
     if(a==sum){
