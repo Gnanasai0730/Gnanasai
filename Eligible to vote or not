@@ -8,7 +8,7 @@ if (age>18)
 {
 print("%d is eligible to vote",age);
 }
-else{
+else{ 
 printf("%d is not elligible to vote",age);
 }
 return 0;
