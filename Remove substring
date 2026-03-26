@@ -7,7 +7,7 @@ int main() {
     int i, j, k;
 
     scanf("%s %s", str, sub);
-
+ 
     for(i=0; str[i]!='\0'; i++) {
         if(str[i]==sub[0]) {
             for(j=0; sub[j]!='\0'; j++)
