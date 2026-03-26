@@ -10,7 +10,7 @@ int sum(int n)
         s=s+r;
         n=n/10;
     }
-    return s; 
+    return s;  
 }
 
 int main()
