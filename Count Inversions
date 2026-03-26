@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main()
-{
+{ 
     int arr[]={2,4,1,3,5};
     int n=5,i,j,count=0;
 
